@@ -67,35 +67,12 @@ namespace ConsoleApplication1
                         }
                     }
                 }
-
-                long t3 = Environment.TickCount;
-
                 // 7.
-                // Test interned string in a parallel loop (this doesn't save any time...try it with collections later).
-                for (int i = 0; i < m; i++)
-                {
-                    Parallel.For(0, m, a =>
-                    {
-                        if (s2 == "cat and rabbit")
-                        {
-                            d++; // false
-                        }
-                        if (s2 == "cat and dog")
-                        {
-                            d--; // true
-                        }
-                    });
-                }
-
-                // 8.
                 // Write results.
-                long t4 = Environment.TickCount;
-
+                long t3 = Environment.TickCount;
                 Console.Write((t2 - t1));
                 Console.WriteLine("," + (t3 - t2));
-                Console.WriteLine("," + (t4 - t3));
             }
-            Console.WriteLine("\nDone!");
             Console.ReadLine();
         }
 
