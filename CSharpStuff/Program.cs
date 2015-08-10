@@ -18,6 +18,7 @@ namespace ConsoleApplication1
             //bool foo_equals_bar = Functional.Lambda<string, bool>(str => str.Equals("foo"))("bar");
             //bool btest = Functional.Lambda(() => false)();
 
+
             //
             //Intern string speed test.
             //
