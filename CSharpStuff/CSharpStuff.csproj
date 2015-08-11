@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="FileSizeFormatProvider.cs" />
     <Compile Include="Functional.cs" />
     <Compile Include="InternString.cs" />

@@ -9,6 +9,7 @@ namespace ConsoleApplication1
 {
     class Program
     {
+        delegate int somedelegate(int i);
 
         static void Main(string[] args)
         {
@@ -29,6 +30,7 @@ namespace ConsoleApplication1
             Console.WriteLine(String.Format(new FileSizeFormatProvider(), "File size: {0:fs}", 100));
             Console.WriteLine(String.Format(new FileSizeFormatProvider(), "File size: {0:fs}", 10000));
 
+            Expression<somedelegate> myET = x => x * x;
         }
 
 
